@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Бухгалтерия</title>
+</head>
+<body>
+ <div class="tabs">
+   <div class="tab">
+    <input type="radio" id="tab1" name="tab-group" checked>
+    <label for="tab1" class="tab-title">Главная</label>
+    <section class="tab-content">
+        <div class="box-content">
+            <div class="balance">
+                <div class="balance-text">
+                    <h4>Баланс</h4>
+                </div>
+                <div class="balance-sum">
+                    <span class="balance-info">12&nbsp000,00</span>
+                </div>
+            </div>
+            <div class="account-group">
+                <div class="account1">
+                    <h5>Счёт 1</h5>
+                    <span class="account1-info">8&nbsp000,00</span>
+                </div>
+                <div class="account2">
+                    <h5>Счёт 2</h5>
+                    <span class="account2-info">4&nbsp000,00</span>
+                </div>
+            </div>
+            <div class="add_inv">
+                <button class="add_inv_btn">Добавить счёт</button>
+            </div>
+        </div>
+         <div class="records">
+             <div class="rec">
+                <input type="radio" id="rec1" name="rec-group">
+                <label for="rec1" class="rec-title">Расход</label>
+                <section class="rec-content">
+                    <form action="signin" method="post">
+                    <div class="content1">
+                        <input type="date" name="calendar" id="when1">
+                    <div class="con1">
+                        <input type="text" id="con1">
+                    </div>
+                    <div class="note1">
+                        <h4>Примечание</h4><br>
+                        <input type="text" id="note1">
+                    </div>
+                    <div class="category1">
+                        <h4>Категория:</h4>
+                        <div class="category2">
+                            <select id="categories1">
+                                <option>ЖКХ</option>
+                                <option>Продукты</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bill1">
+                        <h4>На счёт:</h4>
+                        <div class="bill2">
+                            <select id="bills1">
+                                <option>Счёт 1</option>
+                                <option>Счёт 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                    <input type="submit" value="Записать" id="write1">
+                </form>
+                </section>
+             </div>
+             <div class="rec">
+                 <input type="radio" id="rec2" name="rec-group" checked>
+                 <label for="rec2" class="rec-title">Доход</label>
+                <section class="rec-content">
+                    <form action="signin" method="post">
+                    <div class="content1">
+                        <input type="date" name="calendar" id="when2">
+                    <div class="con1">
+                        <input type="text" id="con2">
+                    </div>
+                    <div class="note1">
+                        <h4>Примечание</h4><br>
+                        <input type="text" id="note2">
+                    </div>
+                    <div class="category1">
+                        <h4>Категория:</h4>
+                        <div class="category2">
+                            <select id="categories2">
+                                <option>Зарплата</option>
+                                <option>Подарок</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bill1">
+                        <h4>Cо счёта:</h4>
+                        <div class="bill2">
+                            <select id="bills2">
+                                <option>Счёт 1</option>
+                                <option>Счёт 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                    <input type="submit" value="Записать" id="write2">
+                </form>
+                </section>
+             </div>
+             <div class="rec">
+                 <input type="radio" id="rec3" name="rec-group" checked>
+                 <label for="rec3" class="rec-title">Перевод</label>
+                <section class="rec-content">
+                    <form action="signin" method="post">
+                    <div class="content1">
+                        <input type="date" name="calendar" id="when3">
+                    <div class="con1">
+                        <input type="text" id="con3">
+                    </div>
+                    <div class="note1">
+                        <h4>Примечание</h4><br>
+                        <input type="text" id="note3">
+                    </div>
+                    <div class="category1">
+                        <h4>На счёт:</h4>
+                        <div class="category2">
+                            <select id="categories3">
+                                <option>Счёт 1</option>
+                                <option>Счёт 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bill1">
+                        <h4>Cо счёта:</h4>
+                        <div class="bill2">
+                            <select id="bills3">
+                                <option>Счёт 1</option>
+                                <option>Счёт 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                    <input type="submit" value="Записать" id="write3">
+                </form>
+                </section>
+             </div>
+         </div>
+    </section>
+   </div>
+   <div class="tab">
+    <input type="radio" id="tab2" name="tab-group">
+    <label for="tab2" class="tab-title">Записи</label>
+    <section class="tab-content">
+
+    </section>
+   </div>
+   <div class="tab">
+    <input type="radio" id="tab3" name="tab-group">
+    <label for="tab3" class="tab-title">Настройки</label>
+    <section class="tab-content">
+
+    </section>
+   </div>
+  </div>
+</body>
+</html>
