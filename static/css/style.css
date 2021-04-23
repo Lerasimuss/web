@@ -1,0 +1,294 @@
+body {
+   background: url("/static/img/background.jpg") center
+   no-repeat;
+   -webkit-background-size: cover;
+   background-size: cover;
+   font-family: Verdana, Tahoma, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+    }
+
+h4 {
+    font-weight: lighter;
+}
+
+.tabs {
+    position: relative;
+    left: 350px;
+    right: 50pc;
+    width: 1100px;
+    top: 30px;
+    }
+.tab, .tab-title {
+    display: inline-block;
+    }
+.tab input[type="radio"] { display: none; }
+
+.tab-title {
+    background: #ccc;
+    padding: 5px 10px;
+    border: 1px solid #666;
+    border-bottom: none;
+    }
+
+.tab-content {
+    position: absolute;
+    border: 1px solid #666;
+    padding: 10px;
+    left: 0;
+    width: calc(100% - 20px);
+    display: none;
+    }
+
+.tab :checked + .tab-title {
+    position: relative;
+    background: #fff;
+    top: 1px;
+    z-index: 1;
+    }
+
+.tab :checked ~ .tab-content {
+    background-color: #C0C0C0;
+    height: 600px;
+    padding: 8px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: block;
+    }
+
+.records {
+    width: 435px;
+    height: 210px;
+    position: relative;
+    right: -535px;
+    top: -255px;
+    }
+
+.rec, .rec-title {
+    display: inline-block;
+    }
+.rec input[type="radio"] { display: none; }
+
+
+.rec-title {
+    background: #CFD487;
+    padding: 5px 10px;
+    border: 1px solid #666;
+    border-bottom: none;
+    }
+
+.rec-content {
+    position: absolute;
+    border: 1px solid #666;
+    padding: 10px;
+    left: 0;
+    width: calc(100% - 20px);
+    display: none;
+    }
+
+.rec :checked + .rec-title {
+    position: relative;
+    background: #C0C0C0;
+    top: 1px;
+    z-index: 1;
+    }
+
+.rec :checked ~ .rec-content {
+    background-color: #C0C0A7;
+    height: 260px;
+    padding: 8px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: block;
+    width: 500px;
+    }
+
+
+.bill1 {
+    width: 300px;
+    height: 45px;
+    position: relative;
+    right: -5px;
+    top: -120px;
+    }
+
+.bill2 {
+    width: 304px;
+    height: 30px;
+    position: relative;
+    right: -85px;
+    top: -56px;
+    }
+
+#bills1, #bills2, #bills3 {
+    width: 165px;
+    height: 24px;
+    position: relative;
+    right: -13px;
+    top: 10px;
+    }
+
+.category1 {
+    width: 300px;
+    height: 45px;
+    position: relative;
+    right: -5px;
+    top: -20px;
+    }
+
+.category2 {
+    width: 300px;
+    height: 45px;
+    position: relative;
+    right: -85px;
+    top: -40px;
+    }
+
+#categories1, #categories2, #categories3 {
+    width: 165px;
+    height: 24px;
+    position: relative;
+    right: -13px;
+    top: -2px;
+    }
+
+
+.note1 {
+    width: 165px;
+    height: 24px;
+    position: relative;
+    right: -6px;
+    top: 75px;
+    }
+
+#note1, #note2, #note3 {
+    position: relative;
+    right: 1px;
+    top: -30px;
+    width: 258px;
+}
+
+
+.con1 {
+    width: 160px;
+    height: 25px;
+    position: relative;
+    right: -300px;
+    top: 30px;
+    }
+
+#con1, #con2, #con3 {
+    width: 160px;
+    height: 25px;
+    position: relative;
+    }
+
+
+#when1, #when2, #when3 {
+    width: 160px;
+    height: 25px;
+    position: relative;
+    right: -300px;
+    top: 135px;
+   }
+
+.content1 {
+    position: relative;
+    top: -5px;
+    }
+
+#write1, #write2, #write3 {
+    width: 165px;
+    height: 34px;
+    position: relative;
+    right: -300px;
+    top: -45px;
+    }
+
+.box-content {
+    width: 300px;
+    height: 258px;
+    position: relative;
+    right: 0px;
+    top: 35px;
+    background-color: #C0C0A7;
+    border: 1px solid #000;
+    }
+
+.balance {
+    width: 300px;
+    height: 50px;
+    position: relative;
+    top: -35px;
+    }
+
+.balance-text {
+    width: 125px;
+    height: 50px;
+    font-size: 24px;
+    position: relative;
+    top: 14px;
+    }
+
+.balance-sum {
+    width: 300px;
+    height: 283px;
+    position: relative;
+    right: -156px;
+    top: -34px;
+    font-size: 22px;
+    color: #0D8300;
+    }
+
+.account-group {
+    width: 300px;
+    height: 216px;
+    position: relative;
+    right: 0px;
+    top: -40px;
+}
+
+.account1 {
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+
+.account2 {
+    position: relative;
+    right: 0px;
+    top: 30px;
+}
+
+.account1-info {
+    float: right;
+    relative: absolute;
+    position: relative;
+    top: -35px;
+    font-size: 11px;
+    color: #0D8300;
+}
+
+.account2-info {
+    float: right;
+    relative: absolute;
+    position: relative;
+    top: -40px;
+    font-size: 11px;
+    color: #0D8300;
+}
+
+.add_inv {
+    position: relative;
+    top: -108px;
+    right: -190px;
+}
+
+
+.add_inv_btn {
+    width: 100px;
+    height: 41px;
+}
